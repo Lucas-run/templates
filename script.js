@@ -7,9 +7,9 @@ import { Contact } from "./components/Contact.js";
 import { FuncTest } from "./components/FuncTest.js";
 import { Hero } from "./components/Hero.js";
 import { Navigation } from "./components/Navigation.js";
-import { Services } from "./components/services.js";
+import { Services } from "./components/Services.js";
 import { Sobre } from "./components/Sobre.js";
-import { Testimonials } from "./components/testimonials.js";
+import { Testimonials } from "./components/Testimonials.js";
 
 function renderiza(parent, child) {
   parent.appendChild(child);
