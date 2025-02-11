@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-neutral: #fff;
+  --clr-primary-400: #aabec2;
+  --clr-primary-100: #edede7;
+  --clr-secondary-400: #2e2e2e;
+  --clr-secondary-900: #000;
+
+  --font-family: "Noto Serif", Georgia, serif;
+
+  --fw-bald: 700;
+  --fw-semibald: 600;
+  --fw-normal: 400;
+  --fw-light: 200;
+
+  --fs-hero-title: 5.357rem;
+  --fs-hero-text: 1.5rem;
+  --fs-title: 3.5rem;
+  --fs-subtitle: 1.125rem;
+  --fs-text: 1rem;
+  --fs-card: 0.875rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--clr-secondary-400);
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}

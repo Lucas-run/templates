@@ -1,0 +1,267 @@
+section {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 6rem;
+}
+
+[class$="class"] {
+  padding: 0.75rem;
+}
+
+[class$="btn"] {
+  background-color: inherit;
+  padding: 1.5rem 3rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+[class$="title"] {
+  font-size: var(--fs-title);
+  font-weight: var(--fw-semibald);
+  margin-top: 3rem;
+}
+
+[class$="subtitle"] {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-bald);
+}
+
+[class$="content"] {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-normal);
+}
+
+[class$="card-content"] {
+  font-size: var(--fs-card);
+}
+
+.nav-container {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-primary-400),
+    var(--clr-primary-100)
+  );
+  position: fixed;
+  display: flex;
+  z-index: 10;
+}
+
+.nav-btn {
+  padding: 0 0.5rem;
+  margin: 0;
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bald);
+  line-height: 1;
+  user-select: none;
+  /* position: relative; */
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0px;
+  padding-top: 4rem;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-primary-400),
+    var(--clr-primary-100),
+    #edede771
+  );
+  z-index: 9;
+  width: 50vw;
+}
+
+.nav-list {
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-link {
+  padding-left: 0.5rem;
+  border-bottom: 1px solid #2e2e2e98;
+  font-size: var(--fs-subtitle);
+}
+
+.hero-class {
+  background-color: var(--clr-primary-400);
+}
+
+.hero-title {
+  font-size: var(--fs-hero-title);
+  font-weight: var(--fw-normal);
+}
+
+.hero-content {
+  font-size: var(--fs-hero-text);
+  font-weight: var(--fw-semibald);
+}
+
+.hero-btn {
+  display: block;
+}
+
+.hero-assets {
+  background-image: url(assets/dianaAI.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  padding: 0;
+}
+
+.sobre-title {
+  margin-top: 5rem;
+}
+
+.sobre-content {
+  margin: 2.125rem 0;
+}
+
+.sobre-assets {
+  background-image: url(assets/dianaWorkAi.webp);
+  background-size: cover;
+  background-position: right 2rem bottom 1rem;
+  background-repeat: no-repeat;
+  height: 45vh;
+  width: 100%;
+  position: absolute;
+  left: 1rem;
+}
+
+.services-class {
+  background-color: var(--clr-primary-400);
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.services-title {
+  align-self: center;
+}
+
+.services-card-subtitle {
+  color: var(--clr-neutral);
+  background-color: var(--clr-secondary-400);
+  padding: 0.25rem;
+  width: 70vw;
+}
+
+.services-card-content {
+  border: 1px solid var(--clr-secondary-400);
+  border-radius: 0 1rem 1rem;
+  padding: 2rem 1rem;
+}
+
+.depoimentos-class {
+  height: 185vh;
+}
+
+.depoimentos-title {
+  font-size: calc(var(--fs-title) * 0.875);
+}
+
+.depoimentos-card {
+  background-color: var(--clr-primary-400);
+  display: flex;
+  flex-direction: column;
+  margin: 3.5rem auto;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  width: 80%;
+  text-align: center;
+}
+
+.depoimentos-card-subtitle {
+  margin-top: 0;
+  padding: 2rem 0;
+}
+
+.contact-class {
+  margin-top: 10rem;
+  background-color: var(--clr-primary-400);
+  margin-bottom: 0;
+}
+
+.contact-card-subtitle {
+  margin-top: 1rem;
+  color: var(--clr-primary-100);
+  padding: 0.5rem;
+}
+
+.contact-card-content {
+  color: var(--clr-secondary-900);
+  padding: 0.5rem;
+}
+
+.contact-btn {
+  display: block;
+}
+
+@media (min-width: 481px) {
+  .sobre-title {
+    margin-top: 0;
+  }
+  section > * {
+    max-width: 749px;
+  }
+
+  [class$="assets"] {
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .sobre-assets {
+    max-width: 749px;
+    position: static;
+  }
+
+  .sobre-content {
+    margin: 1rem auto;
+  }
+
+  section > * {
+    margin: 0 auto;
+  }
+
+  [class$="btn"]:not(.nav-btn) {
+    margin: 1rem auto;
+  }
+  .services-card-subtitle {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-bar {
+    display: block;
+    height: auto;
+    width: 100vw;
+    padding: 1rem 0;
+  }
+  .nav-list {
+    flex-direction: row;
+    width: 60vw;
+    align-items: center;
+  }
+  .nav-link {
+    border: none;
+  }
+
+  .hero-class {
+    min-height: 130vh;
+  }
+  .hero-assets {
+    height: 75vh;
+  }
+}
